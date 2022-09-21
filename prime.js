@@ -1,18 +1,18 @@
-function check_prime(num){
-let count =0;
-  if(num==1||num==undefined){
+function check_prime(number){
+let factor =0;
+  if(number==1||number==undefined){
     return false
   }
-for(i=1;i<=num;i++){
-  if(num%i==1){
-    count++
+for(i=1;i<=number;i++){
+  if(number%i==0){
+    factor++
 
   }
 } 
-  if(count==1){
+  if(factor==2){
     return true;
   }
   return false
 }
-let ans=check_prime(5);
-console.log(ans)
+let answer=check_prime(101);
+console.log(answer)
